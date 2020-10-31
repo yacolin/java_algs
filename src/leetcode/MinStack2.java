@@ -23,7 +23,7 @@ public class MinStack2 {
     }
 
     public int top() {
-        return stack.pop();
+        return stack.peek();
     }
 
     public int getMin() {
