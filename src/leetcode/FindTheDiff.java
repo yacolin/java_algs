@@ -18,11 +18,18 @@ public class FindTheDiff {
         return ch;
     }
 
+    public char findTheDifference2(String s, String t) {
+        return (char) (s + t).chars().reduce(0, (c, d) -> c ^ d);
+    }
+
     public static void main(String[] args) {
         System.out.println("Find The Diff");
 
         FindTheDiff ftd = new FindTheDiff();
         char s = ftd.findTheDifference("abcd", "abced");
+        char t = ftd.findTheDifference("abcd", "abced");
+
         System.out.println(s);
+        System.out.println(t);
     }
 }
