@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.Parenttheses;
 
 import java.util.Stack;
 
